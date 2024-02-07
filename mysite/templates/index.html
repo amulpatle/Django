@@ -8,11 +8,14 @@
         color: pink;
         padding: 20px;
         font-size: 30px;
+        backgroud: black;
       }
     </style>
   </head>
   <body>
-    <div class="main">Hey! how are you?</div>
+    {%for n in clist%}
+    <div class="main">{{n}}</div>
+    {% endfor %}
   </body>
 </html>
 {% comment %} this is not working {% endcomment %}
