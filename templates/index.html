@@ -4,8 +4,8 @@
     <style>
       .main {
         width: 1000px;
-        backgroud-color: red;
-        color: pink;
+        background-color: red;
+        color: green;
         padding: 20px;
         font-size: 30px;
       }
@@ -15,5 +15,20 @@
     {%for n in clist%}
     <div class="main">hello</div>
     {% endfor %}
+
+    <table border="1" ,cellpadding="10">
+      <tr>
+        <th>Name</th>
+        <th>Phone Number</th>
+      </tr>
+      {%for d in student_details%}
+      <tr>
+        <th>
+          <td>{{d.name}}</td>
+          <td>{{d.Phone}}</td>
+        </th>
+      </tr>
+      {%endfor%}
+    </table>
   </body>
 </html>
